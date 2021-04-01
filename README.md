@@ -1,18 +1,18 @@
 ## Hex
 **T**his is kind of a serious problem, 
-(clck)[https://ioinformatics.org/files/ioi1997problem2.pdf].
+[clck](https://ioinformatics.org/files/ioi1997problem2.pdf).
 On first thought it looks annoying and unnecessarily complicated,
 but on 2nd thought .. I've learn new stuff. It's about
 a game of *Hex*, originally named *Polygon* from it's creator
 *Piet Hein*, if you want you can ck
-(wikipedia)[https://en.wikipedia.org/wiki/Hex_(board_game)],
+[wikipedia](https://en.wikipedia.org/wiki/Hex_(board_game)),
 for moar info.
 
 There is no simple strategy for this game, for example
-look at that: (boom!)[http://www.mseymour.ca/hex_book/hexstrat.html].
+look at that: [boom!](http://www.mseymour.ca/hex_book/hexstrat.html).
 We need a brute force here and a little bit of game theory.
 There is a *minimax* algorithm originally developed from
-von Neumann (clck)[https://www.chessprogramming.org/Minimax],
+von Neumann [clck](https://www.chessprogramming.org/Minimax),
 here we need to deelop an *evaluate* function and so on.
 
 The program that I came with turns out to be quite slow:),
@@ -25,9 +25,9 @@ For example for this nput:
 2 2 2 2  2 - EMPTY
 2 2 0 2
 ```
-it spits the followinig:
+it spits the following:
 ```C++
-[[2 0 0 0 0 2]  Here a frame is added. And WHITE has to
+[[2 0 0 0 0 2]  Here a frame has been added, and WHITE has to
  [1 1 2 0 2 1]  play at the position marked with *.
  [1 2 1 * 2 1] 
  [1 2 2 2 2 1]
@@ -36,7 +36,7 @@ it spits the followinig:
 (2, 3) 0
 ```
 The above position is equivalent to the following:
-```JavaScript
+```bash
        _
      _/ \_
    _/b\_/ \_
